@@ -1,6 +1,6 @@
 # moodle-local_coursearchivingnotification
 
-This plugin adds a banner-alert to the top of each course page that is been configured for it.
+This plugin adds a banner-alert to the top of each course page that has been configured for it.
 
 ## Attribution
 
