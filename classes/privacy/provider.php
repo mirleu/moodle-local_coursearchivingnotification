@@ -22,6 +22,7 @@ use core_privacy\local\metadata\null_provider;
  * The plugin's privacy information provider.
  *
  * @package local_coursearchivingnotification
+ * @copyright The Regents of the University of California
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements null_provider {

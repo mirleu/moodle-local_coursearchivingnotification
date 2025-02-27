@@ -22,6 +22,7 @@ use plugin_renderer_base;
  * The plugin's output renderer.
  *
  * @package     local_coursearchivingnotification
+ * @copyright The Regents of the University of California
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class renderer extends plugin_renderer_base {
