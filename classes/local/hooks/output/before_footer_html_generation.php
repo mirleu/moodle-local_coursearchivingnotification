@@ -23,6 +23,7 @@ use local_coursearchivingnotification\output\renderer;
  * Hook callback for local_coursearchivingnotification.
  *
  * @package    local_coursearchivingnotification
+ * @copyright The Regents of the University of California
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class before_footer_html_generation
@@ -45,13 +46,24 @@ class before_footer_html_generation
         /** @var renderer $output */
         $output = $PAGE->get_renderer('local_coursearchivingnotification');
 
+        $config = get_config('local_coursearchivingnotification');
         $rhett = '';
+
         // Only render the notification if we're on a course page,
-        // and if the course has an even number for an ID.
+        // and if the course ID is listed in config.
         if ($PAGE->course
-            && 0 === $PAGE->course->id % 2) {
-            $rhett .= $output->widget();
+            && isset($config->courseids)) {
+            $courseids = explode(',', $config->courseids);
+            foreach ($courseids as $courseid) {
+                $courseid = trim($courseid);
+                if ('' === $courseid  || !is_numeric($courseid)) {
+                    continue;
+                } else if ((int)$courseid === (int)$PAGE->course->id) {
+                    $rhett .= $output->widget();
+                }
+            }
         }
+
         $hook->add_html($rhett);
     }
 }

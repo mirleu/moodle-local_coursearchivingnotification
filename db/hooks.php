@@ -18,6 +18,7 @@
  * Hook callbacks for course archiving notification.
  *
  * @package    local_coursearchivingnotification
+ * @copyright The Regents of the University of California
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
