@@ -19,6 +19,7 @@
  *
  * @package    local_coursearchivingnotification
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright  The Regents of the University of California
  */
 
 defined('MOODLE_INTERNAL') || die();

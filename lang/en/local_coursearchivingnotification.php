@@ -21,8 +21,8 @@
  * @copyright The Regents of the University of California
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$string['pluginname'] = 'Course Archiving Notification';
-$string['privacy:metadata'] = 'This plugin does not store any personal data.';
 $string['archivingnotification'] = 'The course will be archived soon';
 $string['courseids'] = 'Enter course IDs separated by a comma';
 $string['courseidsconfig'] = 'Enter course IDs to place course archive notification.';
+$string['pluginname'] = 'Course Archiving Notification';
+$string['privacy:metadata'] = 'This plugin does not store any personal data.';
