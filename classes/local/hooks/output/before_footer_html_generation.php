@@ -14,7 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-
+/**
+ * Hook callback for local_coursearchivingnotification.
+ *
+ * @package    local_coursearchivingnotification
+ * @copyright The Regents of the University of California
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 namespace local_coursearchivingnotification\local\hooks\output;
 
 use local_coursearchivingnotification\output\renderer;
@@ -26,16 +32,14 @@ use local_coursearchivingnotification\output\renderer;
  * @copyright The Regents of the University of California
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class before_footer_html_generation
-{
+class before_footer_html_generation {
 
     /**
      * A callback to add markup to the page's main content area, right before the footer.
      *
-     * @param \core\hook\output\before_footer_html_generation $hook
+     * @param \core\hook\output\before_footer_html_generation $hook The hook for adding HTML content to the footer.
      */
-    public static function callback(\core\hook\output\before_footer_html_generation $hook): void
-    {
+    public static function callback(\core\hook\output\before_footer_html_generation $hook): void {
         global $PAGE;
 
         // Ignore hook during installation or upgrades.
