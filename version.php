@@ -24,7 +24,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2025062300;
+$plugin->version   = 2025072500;
 $plugin->requires  = 2024100700;
 $plugin->component = 'local_coursearchivingnotification';
 $plugin->release = 'v4.5';
