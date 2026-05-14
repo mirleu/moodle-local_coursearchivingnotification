@@ -21,7 +21,7 @@
  * @copyright The Regents of the University of California
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$string['archivingnotification'] = 'The course will be archived soon';
+$string['archivingnotification'] = '<b>This course has been archived and is no longer active.</b><br> Content available for reference only. No updates or participation are expected.';
 $string['courseids'] = '1. Enter one or more course IDs, separated by commas (e.g., 12, 53, 45)';
 $string['courseidsconfig'] = '2. Click "Save changes" to apply the archive notification to the course(s)';
 $string['pluginname'] = 'Course Archiving Notification';
