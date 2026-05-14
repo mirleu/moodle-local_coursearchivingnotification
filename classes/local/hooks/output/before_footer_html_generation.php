@@ -33,7 +33,6 @@ use local_coursearchivingnotification\output\renderer;
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class before_footer_html_generation {
-
     /**
      * A callback to add markup to the page's main content area, right before the footer.
      *
@@ -55,8 +54,7 @@ class before_footer_html_generation {
 
         // Only render the notification if we're on a course page,
         // and if the course ID is listed in config.
-        if ($PAGE->course
-            && isset($config->courseids)) {
+        if ($PAGE->course && isset($config->courseids)) {
             $courseids = explode(',', $config->courseids);
             foreach ($courseids as $courseid) {
                 $courseid = trim($courseid);

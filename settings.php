@@ -25,15 +25,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($hassiteconfig) {
-
     // New settings page.
     $page = new admin_settingpage('local_coursearchivingnotification',
-        get_string('pluginname', 'local_coursearchivingnotification', null, true));
+        get_string('pluginname', 'local_coursearchivingnotification', null, true)
+    );
 
     $setting  = new admin_setting_configtextarea('local_coursearchivingnotification/courseids',
         get_string('courseids', 'local_coursearchivingnotification', null, true),
         get_string('courseidsconfig', 'local_coursearchivingnotification', null, true), '', PARAM_RAW);
-    $page->add($setting );
+    $page->add($setting);
 
     // Add settings page to the course settings category.
     $ADMIN->add('courses', $page);

@@ -32,7 +32,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class behat_local_coursearchivingnotification extends behat_base {
-
     /**
      * Fills in the course ids for the given courses (by title) in the plugin settings form.
      *
