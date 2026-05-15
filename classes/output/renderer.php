@@ -26,7 +26,6 @@ use plugin_renderer_base;
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class renderer extends plugin_renderer_base {
-
     /**
      * Renders and returns the course archiving notification widget.
      * @return string The widget's rendered markup.
